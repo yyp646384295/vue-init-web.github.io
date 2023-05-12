@@ -4,7 +4,7 @@
       <router-link class="text" to="/">Home</router-link> |
       <router-link class="text" to="/about">About</router-link>
     </nav>
-    <router-view/>
+    <router-view v-wechat-title="$route.meta.title"/>
   </div>
 </template>
 
