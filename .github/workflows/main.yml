@@ -10,6 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v1
+        with: 
+          node-version: '14.x'
       - name: ENV
         run: |
           node -v
