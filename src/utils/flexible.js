@@ -67,15 +67,16 @@
     }
 
     function refreshRem(){
-        let width = docEl.getBoundingClientRect().width;
-        if (width / dpr > 540) {
-            width = width * dpr;
+        var width = docEl.getBoundingClientRect().width;
+        if (width / dpr < 540) {
+            width = 540 * dpr;
+        }else if(width / dpr > 1980){
+            width = 1980 * dpr
         }
-        let rem = width /10;
-        docEl.style.fontSize = rem + 'px';
+        var rem = width / 10;
+        docEl.style.fontSize = rem + "px";
         flexible.rem = win.rem = rem;
     }
-
 
     win.addEventListener('resize', function() {
         clearTimeout(tid);

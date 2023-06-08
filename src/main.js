@@ -9,6 +9,7 @@ import '@/assets/css/_variable.scss'
 import '@/assets/css/reset.scss'
 import "./utils/flexible"
 
+
 import VueWechatTitle from 'vue-wechat-title';
 Vue.use(VueWechatTitle);
 
